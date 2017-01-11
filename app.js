@@ -33,7 +33,7 @@ app.get('/', function(req, res) {
           return res.json({message: 'unable to parse XML'});
         }
 
-        return res.json({url: url, data: result});
+        return res.json({url: url, feed: result});
       });
 
 
