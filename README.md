@@ -1,14 +1,25 @@
-# rss2js
+# rss <img src="public/rssimg.png" width="20"> 2 <img src="public/jsonimg.png" width="20"> json 
 
-Convert an RSS XML feed into JSON. This is a replacement for the now-deprecated Google Feed API.
+API for converting an RSS XML feed into JSON. Originally a replacement for the deprecated Google Feed API. 
 
-# Usage
+## Usage
+
+```
+https://rssjson.vercel.app/api?url=<feed>
+```
+
+Examples
+
+* steam: https://rssjson.vercel.app/api?url=https://store.steampowered.com/feeds/news.xml
+* nyt: https://rssjson.vercel.app/api?url=https://rss.nytimes.com/services/xml/rss/nyt/Europe.xml
+
+## Develop
 
 ```shell
 npm i
 npm start # localhost:5000
 ```
 
-Example URL: `https://groups.google.com/forum/feed/cugos/topics/rss.xml?num=15`
+## Deploy
 
-Head over to localhost:5000?url=https://groups.google.com/forum/feed/cugos/topics/rss.xml?num=15 and you'll see a JSON response.
+Deploys automatically on the `main` branch using [Vercel](https://vercel.com).
