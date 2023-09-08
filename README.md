@@ -5,7 +5,7 @@ Convert an RSS XML feed into JSON. This is a replacement for the now-deprecated 
 # Usage
 
 ```shell
-npm install
+npm i
 npm start # localhost:5000
 ```
 
