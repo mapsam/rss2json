@@ -1,7 +1,3 @@
-// var express = require('express');
-// var request = require('request');
-// var parseString = require('xml2js').parseString;
-
 import express from 'express';
 import got from 'got';
 import { parseString } from 'xml2js';
@@ -11,7 +7,6 @@ const app = express();
 async function parse(xml) {
   return new Promise((resolve, reject) => {
     parseString(xml, (err, parsed) => {
-      console.log('parsed: ', parsed);
       if (err) return reject(err);
       return resolve(parsed);
     });
@@ -37,6 +32,4 @@ app.get('/', async(req, res, next) => {
   return res.json(result);
 });
 
-app.listen(app.get('port'), function() {
-  console.log('Server is running on port', app.get('port'));
-});
+export default app;

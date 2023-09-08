@@ -4,7 +4,7 @@
   "type": "module",
   "main": "api/index.js",
   "scripts": {
-    "start": "nodemon ./api/index.js"
+    "start": "nodemon ./bin/start.js"
   },
   "author": "Sam Matthews",
   "license": "ISC",
