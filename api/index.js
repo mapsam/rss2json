@@ -14,7 +14,7 @@ async function parse(xml) {
 }
 
 app.set('port', (process.env.PORT || 3000));
-app.get('/', async(req, res, next) => {
+app.get('/api', async(req, res, next) => {
   if (!req.query.url) {
     res.status(400);
     return res.json({message: 'url parameter not found'});
